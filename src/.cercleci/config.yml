@@ -1,4 +1,4 @@
-version: 2.1
+ffversion: 2.1
 orbs:
   node: circleci/node@3.0.0
 jobs:
@@ -12,9 +12,9 @@ jobs:
         key: angecommerce-{{ .Branch }}-{{checksum "package-lock.json"}}
       - run: npm install
       - save_cache:
-        key: angecommerce-{{ .Branch }}-{{checksum "package-lock.json"}}
-        path:
-          - "node_modules"
+          key: angecommerce-{{ .Branch }}-{{checksum "package-lock.json"}}
+          path:
+            - "node_modules"
       - run: npm run test --no-watch --no-progress --browsers=ChromeHeadlessCI
 workflows:
   build-and-test:
