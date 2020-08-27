@@ -1,0 +1,47 @@
+<div class="row" style="min-height: 40px;"></div>
+
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <a href="{{productItem?.imageUrl}}" target="blank"><img src="{{productItem?.imageUrl}}" class="img-fluid img-product">
+
+        </a>
+        ....</div>
+
+    <div class="card col-md-4 mb-4 ">
+        <div class="row">
+            <div class="col-md-6 pr-0">
+
+            </div>
+            <div class="col-md-6 pl-0">
+                <div class="pt-0 pl-1 pr-1">
+
+
+
+                    <p class=" text-center p-2 text-danger h5">
+
+                        <strong>{{productItem?.name}} : {{productItem?.price}} Dh/Kg</strong>
+
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="font-weight-light text-justify card-text p-2">{{productItem?.description }} </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <br>
+        <br>
+        <br>
+        <button type="button" class="btn btn-lg btn-outline-danger " (click)="handelAddToCart()">
+                        <i class="fa fa-shopping-cart mr-1 "></i>Shop
+                    </button>.</div>
+</div>

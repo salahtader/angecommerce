@@ -1,0 +1,15 @@
+<div class="card ">
+
+    <div class="list-group list-group-flush p-2">
+        <div class="">
+            <i class="fas fa-minus float-right " (click)="deleteThis(cartItem.id)" title="{{cartItem.values[0].id}" style="color: yellow;"> </i>
+
+            <h6 class="float-left ">{{cartItem.productTitle}}</h6>
+
+        </div>
+        <div>
+            <span class="float-left ">  {{cartItem.qty}}00 g  :</span>
+            <strong class="float-right m-20 "> {{(cartItem.qty * cartItem.price) }}DH</strong>
+        </div>
+    </div>
+</div>
