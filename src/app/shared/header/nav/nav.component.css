@@ -1,0 +1,11 @@
+        .fa-shopping-bag span {
+            background: #cc0000e0;
+            border-radius: 50%;
+            color: #fff;
+            position: relative;
+            /* bottom: 17px; */
+            top: -23px;
+            left: -10px;
+            padding: 2px;
+            font-size: 14px
+        }

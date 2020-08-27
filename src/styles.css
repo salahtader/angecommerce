@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+app-footer {
+    background-color: crimson !important;
+}
+
+.bg-s3 {
+    height: 400px;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-image: url("/assets/section2/banner.jpg");
+}
+
+
+/*footer hidden small*/
+
+@media (max-width: 750px) {
+    app-footer,
+    .navbar-brand {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .nav-item .nav-link {
+        height: 50px !important;
+        line-height: 50px !important;
+        padding: 0px !important;
+        border: none !important;
+        color: #191a20 !important;
+        text-transform: uppercase;
+    }
+}
+
+.anim {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.anim:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
